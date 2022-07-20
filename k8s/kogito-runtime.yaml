@@ -1,0 +1,14 @@
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoRuntime
+metadata:
+  name: kogito-operator-test
+spec:
+  replicas: 1
+  image: docker.io/antram/kogito-operator-test:2.0.0
+  resources:
+    requests:
+      cpu: 20m
+      memory: "320Mi"
+    limits:
+      cpu: "1"
+      memory: "400Mi"
